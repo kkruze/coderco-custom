@@ -1,14 +1,14 @@
 name: using custom action
 
-on [push]
+on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu latest
+    runs-on: ubuntu-latest
 
     steps: 
     - name: checkout code 
-      uses: actions/code@v3
+      uses: actions/checkcode@v4
 
     - name: hello world custom action
       uses: kkruze/coderco-custom@main
